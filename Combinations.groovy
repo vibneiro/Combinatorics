@@ -3,8 +3,8 @@ package chess
 import sun.reflect.generics.reflectiveObjects.NotImplementedException
 
 // Lazy Iterator for choosing all C(n, k) combinations
-// Doesn't require preliminary calculation or additional memory
-// Uses only indices array of length k
+// Require no preliminary calculation or additional memory,
+// Uses only indices array of length k which is negligible.
 class Combinations implements Iterator {
 
     int[] indices
